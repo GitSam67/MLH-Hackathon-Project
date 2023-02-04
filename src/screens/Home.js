@@ -83,7 +83,7 @@ export default function Home() {
                     {/* Logo */}
                     {/* <h1 className="text-2xl font-bold">FileStorage</h1> */}
                 </div>
-                <ConnectButton />
+                <ConnectButton className="absolute top-2 left-2"/>
                 <div className="flex flex-col items-center h-screen mt-30">
                     <div className="flex justify-center">
                         <h1 className="text-4xl font-extrabold">Upload files</h1>

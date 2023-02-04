@@ -56,7 +56,7 @@ return (
 				<div className="signbox h-20"></div>
 				<h2 className="title-font font-bold text-2xl text-violet-500">BlockWeb</h2>
 			</div>
-	<h2 className="font-title font-bold text-left text-4xl mb-4">Register In</h2>
+	<h2 className="font-title font-bold text-left text-4xl mb-4">Register User</h2>
 	<input
 		style={input}
 		value={username}
@@ -78,7 +78,7 @@ return (
 		placeholder="Password"
 		type="password"
 	/>
-	<button style={button} onClick={signUp}>
+	<button className="hover:bg-violet-600" style={button} onClick={signUp}>
 		{" "}
 		Sign Up
 	</button>
