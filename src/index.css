@@ -1,0 +1,8 @@
+#signbox {
+  background: url("../public/logo.jpeg");
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
