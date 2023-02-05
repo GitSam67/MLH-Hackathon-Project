@@ -5,7 +5,12 @@
 .logo {
     background: url("./screens/logo2.jpeg");
 }
-
+.mainlogo {
+    content: url("./screens/logo1.jpeg");
+  }
+.block {
+    background: url("./screens/upload.avif");
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

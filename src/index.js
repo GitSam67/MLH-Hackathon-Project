@@ -4,10 +4,12 @@ import './App.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { configureChains, createClient, WagmiConfig } from 'wagmi';
-import { mainnet, polygon, optimism, arbitrum } from 'wagmi/chains';
+import { mainnet, polygon, optimism, arbitrum, polygonMumbai } from 'wagmi/chains';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
 import '@rainbow-me/rainbowkit/styles.css';
+
+
 
 import {
     getDefaultWallets,
@@ -18,9 +20,9 @@ import {
 
 
 const { chains, provider } = configureChains(
-    [mainnet, polygon, optimism, arbitrum],
+    [mainnet, polygon, optimism, arbitrum,polygonMumbai],
     [
-        alchemyProvider({ apiKey: process.env.TTqMstMYjPlwkPEMXcDKebdRo8uKip45 }),
+        alchemyProvider({ apiKey: "TTqMstMYjPlwkPEMXcDKebdRo8uKip45" }),
         publicProvider()
     ]
 );
@@ -46,6 +48,9 @@ root.render(
     </WagmiConfig>
   </React.StrictMode>
 );
+
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

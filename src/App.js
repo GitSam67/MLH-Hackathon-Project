@@ -4,6 +4,8 @@ import SignUp from "./screens/Signup";
 import Home from "./screens/Home";
 import "./App.css";
 
+
+
 function App() {
 const email = localStorage.getItem("email");
 return (
@@ -18,7 +20,11 @@ return (
 		/>
 		</Routes>
 	</BrowserRouter>
+  
 	</div>
+
+
+
 );
 }
 
